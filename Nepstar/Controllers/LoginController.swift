@@ -42,6 +42,9 @@ class LoginController: UIViewController {
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
         
+        let signUpController = storyboard?.instantiateViewController(withIdentifier: "RegisterController") as! RegisterViewController
+        
+        present(signUpController, animated: true, completion: nil)
         
     }
     
