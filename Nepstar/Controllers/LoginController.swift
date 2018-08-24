@@ -41,34 +41,32 @@ class LoginController: UIViewController {
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        
+        
     }
     
     
-   
     
     //MARK: - Funtions / methods
     
     fileprivate func setUpViews(){
         loginButton.designUIButton()
         signUpButton.designButttonText("Don't have an account? ", "Sign Up")
+        
+        
         }
     
     @objc func handleValidationCheck(){
         
         if checkValidation(textField: emailTextField, validationType: .email, regex: .email) && checkValidation(textField: passwordTextField, validationType: .password, regex: .password){
             
-            loginButton.isEnabled = true
-            loginButton.backgroundColor = UIColor(red: 225/255, green: 16/255, blue: 57/255, alpha: 1)
-            loginButton.layer.borderWidth = 1
-            loginButton.layer.borderColor = UIColor.white.cgColor
-            
-
+            loginButton.enabledOrDisabledButton(isEnabled: true, bgColor: UIColor.redGreenBlue(red: 255, green: 16, blue: 57), borderWidth: 1, UIColor.white)
+ 
         }else{
-            loginButton.layer.borderWidth = 0
-            loginButton.isEnabled = false
-            loginButton.backgroundColor = UIColor(red: 209/255, green: 63/255, blue: 96/255, alpha: 1)
+            
+            loginButton.enabledOrDisabledButton(isEnabled: false, bgColor: UIColor.redGreenBlue(red: 209, green: 63, blue: 96), borderWidth: 0, nil)
+           
         }
-        
    
     }
     
@@ -79,14 +77,14 @@ class LoginController: UIViewController {
         
         if (Validation.shared.Validate(validate: validationType, inputString: checkString, regex: regex)){
             
-            textField.backgroundColor = UIColor(red: 152/255, green: 251/255, blue: 152/255, alpha: 1)
+            textField.backgroundColor = UIColor.redGreenBlue(red: 152, green: 251, blue: 252)
             infoLabel.isHidden = true
            return true
         }else{
 
             infoLabel.isHidden = false
             infoLabel.text = checkValidationType(validationType: validationType)
-            textField.backgroundColor = UIColor(red: 252/255, green: 96/255, blue: 126/255, alpha: 1)
+            textField.backgroundColor = UIColor.redGreenBlue(red: 252, green: 96, blue: 126)
            return false
         }
     }

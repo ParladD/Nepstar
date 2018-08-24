@@ -19,11 +19,19 @@ extension UIButton{
         
         let attributedText = NSMutableAttributedString(string: firstText, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15), NSAttributedStringKey.foregroundColor: UIColor.white])
         
-        attributedText.append(NSAttributedString(string: secondText, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15), NSAttributedStringKey.foregroundColor: UIColor.rgb(red: 2, green: 229, blue: 243)]))
+        attributedText.append(NSAttributedString(string: secondText, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15), NSAttributedStringKey.foregroundColor: UIColor.redGreenBlue(red: 2, green: 229, blue: 243)]))
         
         self.setAttributedTitle(attributedText, for: .normal)
         
     }
     
+    func enabledOrDisabledButton(isEnabled: Bool, bgColor: UIColor, borderWidth: CGFloat, _ borderColor: UIColor?){
+        
+        self.isEnabled = isEnabled
+        self.backgroundColor = bgColor
+        self.layer.borderWidth = borderWidth
+        guard let color = borderColor else{return}
+        self.layer.borderColor = color.cgColor
+    }
     
 }
