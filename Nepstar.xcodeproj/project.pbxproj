@@ -11,6 +11,7 @@
 		4D468515212F566100A65B45 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D468514212F566100A65B45 /* UIColor+extensions.swift */; };
 		4D7AD83A2130473D005D874D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7AD8392130473D005D874D /* RegisterViewController.swift */; };
 		4D7AD83C21304D32005D874D /* UITextField+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7AD83B21304D32005D874D /* UITextField+extensions.swift */; };
+		4D7AD84021307719005D874D /* LoginAndRegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7AD83F21307719005D874D /* LoginAndRegisterProtocols.swift */; };
 		4D9A6A3C212C41E7006A37B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A6A3B212C41E7006A37B3 /* AppDelegate.swift */; };
 		4D9A6A3E212C41E7006A37B3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9A6A3D212C41E7006A37B3 /* LoginController.swift */; };
 		4D9A6A41212C41E7006A37B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D9A6A3F212C41E7006A37B3 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		4D468514212F566100A65B45 /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
 		4D7AD8392130473D005D874D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4D7AD83B21304D32005D874D /* UITextField+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+extensions.swift"; sourceTree = "<group>"; };
+		4D7AD83F21307719005D874D /* LoginAndRegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndRegisterProtocols.swift; sourceTree = "<group>"; };
 		4D9A6A38212C41E7006A37B3 /* Nepstar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nepstar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D9A6A3B212C41E7006A37B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D9A6A3D212C41E7006A37B3 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				4DE37AB2212CB1EC00091C83 /* Validation.swift */,
+				4D7AD83F21307719005D874D /* LoginAndRegisterProtocols.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				4D7AD83A2130473D005D874D /* RegisterViewController.swift in Sources */,
 				4D468513212F50C300A65B45 /* UILabel_extensions.swift in Sources */,
 				4DE37AB3212CB1EC00091C83 /* Validation.swift in Sources */,
+				4D7AD84021307719005D874D /* LoginAndRegisterProtocols.swift in Sources */,
 				4D9A6A3C212C41E7006A37B3 /* AppDelegate.swift in Sources */,
 				4D468515212F566100A65B45 /* UIColor+extensions.swift in Sources */,
 			);
